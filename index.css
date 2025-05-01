@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-slate-50 to-indigo-50 min-h-screen;
+  }
+}
+
+.glass-card {
+  @apply bg-white/70 backdrop-blur-lg;
+}
+
+.hover-scale {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-teal-500;
+}
